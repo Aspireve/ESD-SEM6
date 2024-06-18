@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea></textarea>
+    <br/>
+    <input id="age"/>
+
+    <button id="btn">Click Here</button>
+
+    <p id="name">Data in a paragraph</p>
+    <p id="eligibility">Eligibility: </p>
+    <script>
+        const button = document.getElementById("btn")
+        btn.addEventListener("click", function(){
+            const text = document.querySelector("textarea").value
+            const age = document.getElementById("age").value
+            document.getElementById("name").innerHTML = "Hello " + text
+            document.getElementById("eligibility").innerHTML = "Eligibility: " + (parseInt(age) > 18 ? "True" : "False")
+        })
+
+    </script>
+</body>
+</html>
