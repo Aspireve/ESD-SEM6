@@ -9,16 +9,23 @@
     <p id="output"></p>
     <script>
         let student = {
-            firstname: "Steve",
-            lastname: "Fern",
-            marks: 70
+            firstname: "John",
+            lastname: "Doe",
+            marks: 70,
+            email: "johnDoe@gmail.com",
+            address: {
+                building: "123/4",
+                street: "XYZ Street",
+                city: "ABC City",
+                country: "PQR Country"
+            }
         } 
-        let firstname = "Steve"
-        let lastname = "Fern"
+        let firstname = "John"
+        let lastname = "Doe"
         let marks = 70
 
         var output = document.getElementById("output")
-        output.innerHTML = `My name is ${student.firstname} ${student.lastname} and I have scored ${student.marks} marks`
+        output.innerHTML = `${student.firstname}, ${student.lastname}, ${student.marks},  ${student.email}`
     </script>
 </body>
 </html>
